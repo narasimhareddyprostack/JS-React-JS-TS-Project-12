@@ -199,22 +199,17 @@ let users=[{"id":1,"name":"Marcela","email":"mbossons0@ameblo.jp","gender":"Fema
 {"id":199,"name":"Quint","email":"qgorst5i@purevolume.com","gender":"Male"},
 {"id":200,"name":"Adorne","email":"atarrant5j@reuters.com","gender":"Female"}]
 
-function displayUserData(){
-   
+let displayUserData =()=>{
     let rows=""
     for(user of users){
 
-      
             rows = rows + `<tr>
                                 <td>${user.id}</td>
                                 <td>${user.name}</td>
                                 <td>${user.email}</td>
                                 <td>${user.gender}</td>
-                         </tr>`
-        
-       
+                         </tr>`       
     }
-
     document.getElementById('user_Data').innerHTML =rows
     //document.getElementById('user_Data').innerHTML ="GA"
 }
