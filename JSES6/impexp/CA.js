@@ -1,0 +1,3 @@
+class CA extends Account{
+
+}
